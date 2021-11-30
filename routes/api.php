@@ -21,6 +21,10 @@ Route::get('/products', function () {
     return Product::all();
 });
 
+Route::get('/keranjangs', function () {
+    return Keranjang::all();
+});
+
 Route::post('/keranjangs', [KeranjangController::class, 'store']);
 
 
